@@ -303,3 +303,134 @@ let obj = {
 };
 console.log(obj);
 ```
+
+
+
+# Optional Chaining
+```
+let obj = {
+    name: "wecode",
+    address: {},
+  };
+  console.log(obj.address.pincode); //undefined
+```
+```
+  let obj = {
+    name: "wecode",
+  };
+  console.log(obj.address.pincode); //error
+
+```
+```
+  let obj = {
+    name: "wecode",
+    address: {
+      pincode: 302012,
+      myAddress: {
+        colony: "Narayanpuri",
+      },
+    },
+  };
+  console.log(obj?.address?.otherAddress?.colony);
+
+  output:undefined
+```
+```
+  let obj = {
+    name: "wecode",
+    address: {
+      pincode: 302012,
+      myAddress: {
+        colony: "Narayanpuri",
+      },
+    },
+  };
+
+  if(obj?.address?.pincode){
+    console.log("yes")
+  }
+  else{
+    console.log("no")
+  }
+```
+
+# practice question
+
+## 1
+```
+function test(...num) {
+    let newNum = 0;
+    for (let i = 0; i < num.length; i++) {
+      newNum += num[i];
+    }
+    return newNum;
+  }
+  console.log(test(1, 2, 3, 4, 5));
+```
+## 2
+```
+let arr=[1,2]
+
+let arr2=[a=100,3,4]
+
+let arr3=[5,6,c=1000]
+
+ let  newarr=[...arr2,...arr,...arr3]
+
+ console.log(newarr)
+```
+## 3
+```
+let obj1={
+    name:"wecode",
+    age:21
+
+}
+
+let obj2={
+    state:"rajsthan",
+    age:22
+
+}
+
+let obj3={
+    city:"jaipur",
+    age:23,
+}
+
+let obj={...obj1,...obj2,...obj3}
+
+ console.log(obj)
+
+ output: age:23
+```
+## 4
+```
+function printAge(age) {
+    age && console.log("My age is " + age);
+  }
+
+  printAge(10);
+```
+## 5
+```
+function test(fName, lName) {
+    return fName || lName || "Unknown";
+  }
+  console.log(test(null, "khan"));
+```
+
+## 6
+```
+function fn1(a, b) {
+    if (a && b) {
+      fn2();
+    } else {
+      console.log("No");
+    }
+  }
+  function fn2() {
+    console.log("Function two....");
+  }
+  fn1(10, null);
+```
