@@ -202,9 +202,9 @@ ka use karenge because nested array and nested object me deep copy ki help se hi
         }
         check(num)
    ```
-        ```
+        
   function
-
+```
              function test() {
                     var a = 2;
                      console.log(a);
@@ -213,8 +213,9 @@ ka use karenge because nested array and nested object me deep copy ki help se hi
                   test()
          
          ```
-                  ```
+                  
      block scope
+     ```
 
  {
  let a=10
