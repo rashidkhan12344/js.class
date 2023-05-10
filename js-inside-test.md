@@ -193,18 +193,19 @@ ka use karenge because nested array and nested object me deep copy ki help se hi
 ```
 
 
-
-### global
-  ```
+```
+ global
+  
         let num=10
         function check(a){
          console.log(a)
         }
         check(num)
    ```
+   ```
         
   function
-```
+
              function test() {
                     var a = 2;
                      console.log(a);
@@ -213,17 +214,18 @@ ka use karenge because nested array and nested object me deep copy ki help se hi
                   test()
          
          ```
+         ```
                   
      block scope
-     ```
+     
 
  {
  let a=10
  let b=20
 
       }
-      ```
-
+      
+```
 # 10. What is JIT? Explain
 ```
 JIT ka mtbl hota h Just-in-time or JIT Compiler ek type ka compiler hota h jo runtime me compiler krta h jb koi javascript code execute hota h to be engine us code ko intermediate code me convert krta h es intermediate code ko machine code me badalne ke liye ek vishesh type ka compiler use me laya jata h jise hm JIT compiler kaha jata h
