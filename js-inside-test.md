@@ -201,18 +201,21 @@ ka use karenge because nested array and nested object me deep copy ki help se hi
          console.log(a)
         }
         check(num)
+   ```
         ```
- ### function
-```
+  function
+
              function test() {
                     var a = 2;
                      console.log(a);
                                 }
         
                   test()
+         
+         ```
                   ```
-    ### block scope
-    ```
+     block scope
+
  {
  let a=10
  let b=20
